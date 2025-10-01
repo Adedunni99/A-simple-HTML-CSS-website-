@@ -82,6 +82,9 @@ The site is now publicly reachable at:
 
     http://storage.googleapis.com/my-gcp-html-site-123/index.html
 
+ <img width="1854" height="802" alt="Screenshot from 2025-09-25 18-22-38" src="https://github.com/user-attachments/assets/f93ea169-c94a-4116-b028-b7462254040f" />
+
+
 Quick Recap
 
 Build: Create index.html + style.css.
