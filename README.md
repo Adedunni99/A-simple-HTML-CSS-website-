@@ -8,7 +8,7 @@ Create a folder on your computer,  GCP.
 
 Inside it create two files: index.html, style.css
 
-    index.html
+ index.html
 
     <!DOCTYPE html>
     <html>
@@ -18,14 +18,14 @@ Inside it create two files: index.html, style.css
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    <h1>Hello from Google Cloud!</h1>
+    <h1>Hello from Google Cloud, i just want to tell you how much i love you!</h1>
     <p>This is my simple HTML/CSS website.</p>
     </body>
     </html>
 
 
 
-    style.css
+   style.css
     
     body {
     font-family: Arial, sans-serif;
@@ -49,7 +49,7 @@ Log in and select a project:
 
     gcloud auth login
 
-    gcloud config set project cool-coral-473110-d0
+    gcloud config set project cool-coral-410-d0
 
 
  Part 3 – Create a Storage Bucket
@@ -58,22 +58,22 @@ Buckets must have a unique name. My-gcp-html-site-dunni.
 
 Create it and allow public read:
 
-    gsutil mb -l us-central1 gs://my-gcp-html-site-123/
+    gsutil mb -l us-central1 gs://my-gcp-html-site-222/
 
-    gsutil iam ch allUsers:objectViewer gs://my-gcp-html-site-123
+    gsutil iam ch allUsers:objectViewer gs://my-gcp-html-site-
 
  Part 4 – Upload Your Website Files
  
 From the folder where index.html and style.css live:
 
-    gsutil cp * gs://my-gcp-html-site-123
+    gsutil cp * gs://my-gcp-html-site-
 
 
  Part 5 – Set the Bucket as a Website
  
 Tell GCS to use index.html as the main page:
 
-    gsutil web set -m index.html gs://my-gcp-html-site-123
+    gsutil web set -m index.html gs://my-gcp-html-site-22
 
 
  Part 6 – View the Live Site
@@ -93,12 +93,12 @@ Deploy:
 
     gcloud auth login
 
-    gsutil mb -l us-central1 gs://my-gcp-html-site-123/
+    gsutil mb -l us-central1 gs://my-gcp-html-site-22/
 
-    gsutil iam ch allUsers:objectViewer gs://my-gcp-html-site-123
+    gsutil iam ch allUsers:objectViewer gs://my-gcp-html-site-
 
-    gsutil cp * gs://my-gcp-html-site-123/
-    gsutil web set -m index.html gs://my-gcp-html-site-123
+    gsutil cp * gs://my-gcp-html-site-22/
+    gsutil web set -m index.html gs://my-gcp-html-site-
 
 
 
